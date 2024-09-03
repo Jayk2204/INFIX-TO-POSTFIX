@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infix to Postfix Converter By Jaykishan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <marquee direction="right"><h1>Infix to Postfix Converter By Jaykishan</h1> </marquee>
+        <form id="converter-form" align="center">
+            <label for="infix" ><b>Enter Infix Expression:</b></label>
+            <input type="text" id="infix" placeholder="e.g., A+B*(C^D-E)">
+            <button type="button" onclick="convert()">Convert</button><br>
+			<label style=" color: red">Note:Please do not use space</label>
+        </form>
+        <div id="result-container">
+            <h2 align="center">Postfix Expression:</h2>
+            <h2 id="postfix"align="center" style=" color: Blue"></h2>
+        </div>
+		 <div id="steps-container" align="center">
+            <h2>Steps:</h2>
+            <div id="steps-table"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
